@@ -1,10 +1,10 @@
-import { all, fork, takeLatest, put } from 'redux-saga/effects'
+import { all, fork } from 'redux-saga/effects'
 
-import defaultSaga from '../example/saga'
+import watchDefaultWorker from '../example/saga'
 
 function* rootSaga() {
   yield all([
-    fork(defaultSaga)
+    fork(watchDefaultWorker)
   ])
 }
 

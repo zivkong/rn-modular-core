@@ -1,13 +1,12 @@
-import { takeLatest, call } from 'redux-saga/effects'
+import { all, fork } from 'redux-saga/effects'
+import {
+  watchDefaultWatcher
+} from './watchers'
 
-function* defaultWorker() {
-  try {
-    yield true
-  } catch (error) {
-    console.error('default Worker error', error)
-  }
+function* defaultSaga() {
+  yield all([
+    fork(watchDefaultWatcher)
+  ])
 }
 
-export function* watchDefaultWorker() {
-  yield takeLatest('DEFAULT_WORKER', defaultWorker)
-}
+export default defaultSaga
