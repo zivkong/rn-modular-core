@@ -32,6 +32,8 @@ import {name as appName} from './app.json'; <- Remove this line
 AppRegistry.registerComponent('projectName', () => App)
 ```
 
-Step 4
+Now you are ready to develop or install the first module.
+
+## EXAMPLE
 
 
