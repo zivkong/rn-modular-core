@@ -5,10 +5,6 @@ Recommended to use React Native 0.60 and above
 
 `npx react-native init <projectName>`
 
-Run on simulator or real device to make sure everything is okay.
-
-`yarn android`
-
 <br />
 <br />
 <br />
@@ -40,8 +36,8 @@ AppRegistry.registerComponent('projectName', () => App)
 #### Step 4
 Delete default root `App.js` and `app.json`
 
-<br />
-Now you are ready to develop or install the first module.
+#### Step 5
+run `yarn android`
 
 <br />
 <br />
