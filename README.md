@@ -44,11 +44,8 @@ AppRegistry.registerComponent('projectName', () => App)
 #### Step 4
 Delete default root `App.js` and `app.json`
 
-<br />
 Now you are ready to develop or install the first module.
 
-<br />
-<br />
 <br />
 <br />
 
