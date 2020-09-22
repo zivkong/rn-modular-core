@@ -7,8 +7,6 @@ Recommended to use React Native 0.60 and above
 
 <br />
 <br />
-<br />
-<br />
 
 ## Modular Core Setup
 ---
@@ -18,6 +16,12 @@ Install core dependencies
 
 ```
 yarn add @react-navigation/native react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view @react-navigation/stack react-redux redux redux-devtools-extension redux-persist redux-saga redux-thunk react-native-config https://github.com/zivkong/redux-persist-filesystem-storage.git rn-fetch-blob
+```
+
+IOS
+```
+cd pod
+pod install
 ```
 
 #### Step 2
@@ -39,8 +43,8 @@ Delete default root `App.js` and `app.json`
 #### Step 5
 run `yarn android`
 
-<br />
-<br />
+Now you are ready to develop or install the first module.
+
 <br />
 <br />
 
