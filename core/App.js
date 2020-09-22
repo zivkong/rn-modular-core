@@ -2,15 +2,17 @@ import React, { useEffect } from 'react'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 
-import { coreInit, coreCleanup } from './config/init'
+import { appInit, appEffect, appEffectCleanup } from './config/init'
 import { store, persistor } from './config/redux'
 
 import Navigation from './routes'
 
+appInit()
+
 const App = () => {
   useEffect(() => {
-    coreInit()
-    return () => coreCleanup()
+    appEffect()
+    return () => appEffectCleanup()
   }, [])
 
   return (

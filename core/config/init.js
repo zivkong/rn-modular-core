@@ -1,13 +1,11 @@
-import { providersInit, providersCleanup } from '../providers'
-
-const coreInit = () => {
-  // Initiate core functions AFTER navigation and redux is mounted
-  providersInit()
+export const appInit = () => {
+  console.log('App Initialized')
 }
 
-const coreCleanup = () => {
-  // Cleanup core functions when user restart the app
-  providersCleanup()
+export const appEffect = () => {
+  console.log('Executing App Effect')
 }
 
-export { coreInit, coreCleanup }
+export const appEffectCleanup = () => {
+  console.log('App Effect Cleanup')
+}
