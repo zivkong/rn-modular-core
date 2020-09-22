@@ -20,7 +20,7 @@ yarn add @react-navigation/native react-native-reanimated react-native-gesture-h
 
 IOS
 ```
-cd pod
+cd ios
 pod install
 ```
 
